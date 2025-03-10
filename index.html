@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song AI Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Song AI Bot</h1>
+        <input type="text" id="songInput" placeholder="Enter song name..." />
+        <button onclick="playSong()">▶️ Play</button>
+        <button onclick="pauseSong()">⏸️ Pause</button>
+        <button onclick="resumeSong()">▶️ Resume</button>
+        <button onclick="stopSong()">⏹️ Stop</button>
+        <p id="status"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
